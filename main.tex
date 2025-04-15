@@ -1,0 +1,43 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper, total={17cm, 26cm}]{geometry} %určení poměru stran
+\usepackage{booktabs} %hezké tabulky
+\usepackage[T1]{fontenc}
+\usepackage{svg} %možnost vkládání .svg obrázků
+\usepackage{subcaption} %možnost dělání popisků pro dva obrázky vedle sebe
+\usepackage[dvipsnames]{xcolor} %přidá možnosti více barev do grafů
+\usepackage{pdfpages} %umí vložit stranu pdf
+\usepackage[version=4]{mhchem} %na chemické vzorce 
+
+\usepackage{pgfplots} %knihovna na dělání grafů
+\pgfplotsset{/pgf/number format/.cd,1000 sep={\,},} %v grafech formátuje čísla českým způsobem (mezera, ne čárka jako oddělovač tří znaků)
+\pgfplotsset{width=0.8 \linewidth,compat=1.9} %nastavení jednotné velikosti grafů
+\usepgfplotslibrary{external}
+
+\usepackage{amsmath}
+\usepackage[czech=quotes]{csquotes} %české uvozovky
+\usepackage{dcolumn} % sloupce tabulky s ciselnymi hodnotami
+\usepackage[backend=biber, style=iso-numeric, alldates=iso]{biblatex} % citování
+\usepackage{indentfirst} % odsazení prvního řádku
+\addbibresource{references.bib} % z tohoto souboru tahá sitace
+%Překlady
+\renewcommand{\figurename}{Obrázek} %před obrázky není "figure", ale "Obrázek"
+\renewcommand{\tablename}{Tabulka} 
+\renewcommand{\contentsname}{Obsah} 
+\renewcommand{\listfigurename}{Seznam obrázku}
+\renewcommand{\listtablename}{Seznam tabulek}
+\renewcommand{\appendixname}{Příloha}
+
+\title{Projekt NLA}
+\author{Filip Šrámek}
+\date{Březen 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Zadání}
+\section{Naprogramování LUP rozkladu}
+
+
+\end{document}
